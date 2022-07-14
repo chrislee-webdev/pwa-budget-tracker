@@ -5,7 +5,7 @@ const CACHE_NAME = APP_PREFIX + VERSION;
 const FILES_TO_CACHE = [
     './public/index.html',
     './public/css/style.css',
-    // Don't need images due to cache limit
+    // Don't need images due to cache limit?
     './public/icons/icon-72x72.png',
     './public/icons/icon-96x96.png',
     './public/icons/icon-128x128.png',
