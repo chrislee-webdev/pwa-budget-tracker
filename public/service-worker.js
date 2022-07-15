@@ -20,7 +20,7 @@ const FILES_TO_CACHE = [
 self.addEventListener('install', function (e) {
     e.waitUntil(
         caches.open(CACHE_NAME).then(function (cahce) {
-            console.log('installing cache : ' + CACHE_NAME)
+            console.log('installing cache : ' + CACHE_NAME);
             return cache.addAll(FILES_TO_CACHE)
         })
     )
@@ -53,7 +53,7 @@ self.addEventListener('fetch', function (e) {
                 console.log('responding with cache : ' + e.request.url)
                 return request
             } else {
-                console.log('file is not cached, fetchin : ' + e.request.url)
+                console.log('file is not cached, fetching : ' + e.request.url)
                 return fetch(e.request)
             }
         })
